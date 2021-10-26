@@ -4,6 +4,27 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+##################
+# for memo_client
+##################
+memo_client/node_modules/*
+memo_clinet/*.iml
+memo_clinet/.idea
+memo_client/.next/*
+memo_clinet/.vscode
+memo_clinet/.DS_Store
+memo_clinet/coverage
+memo_clinet/dist
+memo_clinet/sw.*
+memo_clinet/.env
+memo_clinet/.output
+memo_clinet/.husky
+memo_clinet/package-lock.json
+memo_clinet/yarn-error.log
+
+###############
+# For memo_api
+###############
 # Ignore vender/bundler
 memo_api/vendor/bundle/*
 

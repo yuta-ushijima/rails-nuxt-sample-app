@@ -1,4 +1,3 @@
-const url = "http://localhost:3000/posts/3";
 const PostPage = (props) => {
     return(
         <div>
@@ -9,7 +8,11 @@ const PostPage = (props) => {
     );
 };
 
-export async function getServerSideProps() {
+export default PostPage;
+
+export async function getServerSideProps(context) {
+    const post_id = context.params.id
+    const url = `http://localhost:3000/posts/${post_id}`;
     const res = await fetch(url);
     const data = await res.json();
     return {
@@ -19,4 +22,3 @@ export async function getServerSideProps() {
     };
 }
 
-export default PostPage;

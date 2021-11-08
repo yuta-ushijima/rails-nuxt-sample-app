@@ -12,8 +12,6 @@ const PostPage = (props) => {
 export async function getServerSideProps() {
     const res = await fetch(url);
     const data = await res.json();
-
-    console.log(data)
     return {
         props: {
             data

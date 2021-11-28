@@ -43,7 +43,7 @@ module MemoApi
         origins "*"
         resource "*",
           headers: :any,
-          methods: [:get, :post, :options, :head]
+          methods: [:get, :post, :options, :head, :put]
       end
     end
   end

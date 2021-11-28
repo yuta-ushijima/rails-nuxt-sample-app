@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import Router from 'next/router';
 
-const Form = ()=> {
+const New = ()=> {
     // content...title,bodyのそれぞれの値
     // setContent...title,bodyを更新するための関数(宣言するだけで利用可能)
     const [content, setContent] = useState({
@@ -72,4 +72,4 @@ const Form = ()=> {
     )
 }
 
-export default Form
+export default New

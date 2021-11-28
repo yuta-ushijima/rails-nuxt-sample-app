@@ -7,7 +7,7 @@ const Post = (props) => {
     return(
         <div>
             <h1>メモ一覧</h1>
-            <Link href={`/posts/form`}><a>新規作成</a></Link>
+            <Link href={`/posts/new`}><a>新規作成</a></Link>
             {props.posts.map((post, index) =>
                 <div key={index}>
                     <h2>{post.title}</h2>
